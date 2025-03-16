@@ -1,4 +1,5 @@
 import ListGroup from './components/ListGroup'
+import Alert from './components/Alert'
 
 function App() {
   let items = [
@@ -14,6 +15,9 @@ function App() {
   }
   return (
     <div>
+      <Alert>
+        hello <span className="fw-bold">word</span>
+      </Alert>
       <ListGroup
         items={items}
         heading="list of items"
