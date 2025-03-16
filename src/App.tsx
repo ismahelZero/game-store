@@ -9,9 +9,16 @@ function App() {
     'And a fifth one'
   ]
 
+  const handleSelection = (item: string) => {
+    console.log(item)
+  }
   return (
     <div>
-      <ListGroup items={items} heading="list of items" />
+      <ListGroup
+        items={items}
+        heading="list of items"
+        onSelect={handleSelection}
+      />
     </div>
   )
 }
